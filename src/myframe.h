@@ -804,7 +804,6 @@ struct MyFrame : wxFrame {
         sys->RememberOpenFiles();
         if (nb->GetPageCount() <= 1) {
             nbe.Veto();
-            Close();
         } else if (sw->doc->CloseDocument()) {
             nbe.Veto();
         }
